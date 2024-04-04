@@ -1,19 +1,19 @@
 <script setup>
-import { ref } from 'vue'
-
-const count = ref(0)
-
-const increment = () => {
-  count.value++
-}
-
-function updateCount(event) {
-  count.value = Number(event.target.value)
-}
+defineProps({
+  name: String,
+  price: Number
+})
 </script>
-
 <template>
-  <h1>{{ count }}</h1>
-  <button @click="increment">+</button>
-  <input @input="updateCount" />
+  <div class="shoes">
+    <h1>{{ name }}</h1>
+    <h2>Цена: {{ price }}</h2>
+  </div>
 </template>
+
+<style scoped>
+.shoes {
+  border: 1px solid blue;
+  padding-left: 15px;
+}
+</style>
