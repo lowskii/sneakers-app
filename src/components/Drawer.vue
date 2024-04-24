@@ -9,7 +9,8 @@ import CartListItem from './CartListItem.vue';
   <div class="bg-white w-96 fixed right-0 top-0 h-full p-8 z-20">
     <DrawerHead />
     <CartListItem />
-    <div class="flex flex-col gap-4 mb-6">
+
+    <div class="flex flex-col gap-4 mt-7">
       
       <div class="flex gap-2">
         <span>Итого:</span>
@@ -29,7 +30,7 @@ import CartListItem from './CartListItem.vue';
 
       <button
       disabled = ""
-      class="bg-lime-500 w-full disabled:bg-slate-300 rounded-xl py-3 text-white hover:bg-lime-600 active:bg-lime-700">
+      class="mt-4 bg-lime-500 w-full disabled:bg-slate-300 rounded-xl py-3 text-white hover:bg-lime-600 active:bg-lime-700 cursor-pointer">
         Оформить заказ
       </button>
 
